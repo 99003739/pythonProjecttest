@@ -1,0 +1,118 @@
+  while (1)
+   {
+                //************************************Features by Prateek Chauhan, 99003739****************************************
+
+
+
+ // SUNROOF CONTROL FEATURE: By default: 0(Roof is Closed)
+//	                         Button pressed: 1(Roof opens)
+
+
+ 	  	 if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_6)==0)  //Check if button pressed
+ 	  	  	  	{
+ 	  	  		  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15,GPIO_PIN_SET);
+
+ 	  	  	  	}
+ 	  	  	 //HAL_Delay(2000);
+ 	  	  else
+ 	  	  	   {
+ 	  	  		  HAL_GPIO_WritePin(GPIOD,GPIO_PIN_15,GPIO_PIN_RESET);
+
+ 	  	  	   }
+
+
+// EXTERIOR LIGHTING CONTROL USING LDR SENSOR :By default: 0(Head light is OFF)
+//	                                           Low lighting Condition: 1(Head light is ON)
+
+ 	  	 	  	  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_2)==0)  //Check if button pressed
+ 	  	 	  	  	    	{
+ 	  	 	  	  	    	  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13,GPIO_PIN_SET);
+ 	  	 	  	  	    	  	 		 // HAL_Delay(2000);
+
+ 	  	 	  	  	    	 }
+ 	  	 	  	  	 else
+ 	  	 	  	  	    	 {
+ 	  	 	  	  	    	  	HAL_GPIO_WritePin(GPIOD,GPIO_PIN_13,GPIO_PIN_RESET);
+ 	  	 	  	  	    	  	 		 //HAL_Delay(2000);
+ 	  	 	  	  	    	 }
+
+
+
+//........................................................................................................................................
+
+
+ 	  	 	  //************************************Features by Nilanjana Das, 99003748****************************************
+
+
+// SIDE VIEW MIRROR :By default: 0(Mirror is Closed)
+//	                   Feature Enable: 1(Mirror Opens)
+
+
+ 	  	  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1)==0)  //Check if button pressed
+ 	  	    	{
+ 	  	    	  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14,GPIO_PIN_SET);
+ 	  	    	  	 		 // HAL_Delay(2000);
+
+ 	  	    	 }
+ 	  	 else
+ 	  	    	 {
+ 	  	    	  	HAL_GPIO_WritePin(GPIOD,GPIO_PIN_14,GPIO_PIN_RESET);
+ 	  	    	  	 		 //HAL_Delay(2000);
+ 	  	    	 }
+
+
+
+
+// PARKING BUZZER :By default: 0(Buzzer is OFF)
+//	               Object detected while parking: 1(Buzzer Beeps)
+
+ 	  	 	  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_3)==0)  //Check if button pressed
+ 	  	 	  	    	{
+ 	  	 	  	    	  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12,GPIO_PIN_SET);
+ 	  	 	  	    	  	 		 // HAL_Delay(2000);
+
+ 	  	 	  	    	 }
+ 	  	 	  	 else
+ 	  	 	  	    	 {
+ 	  	 	  	    	  	HAL_GPIO_WritePin(GPIOD,GPIO_PIN_12,GPIO_PIN_RESET);
+ 	  	 	  	    	  	 		 //HAL_Delay(2000);
+ 	  	 	  	    	 }
+
+//........................................................................................................................................
+
+
+ 	  	 	//************************************Features by Archita Modi, 99003724****************************************
+
+
+// INTERIOR A/C CONTROL :By default: 0(A/C is OFF)
+//	                    Feature Enabled: 1(A/C ON)
+
+ 	  	 		 	  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_4)==0)  //Check if button pressed
+ 	  	 		 	  	    	{
+ 	  	 		 	  	    	  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_11,GPIO_PIN_SET);
+ 	  	 		 	  	    	  	 		 // HAL_Delay(2000);
+
+ 	  	 		 	  	    	 }
+ 	  	 		 	  	 else
+ 	  	 		 	  	    	 {
+ 	  	 		 	  	    	  	HAL_GPIO_WritePin(GPIOD,GPIO_PIN_11,GPIO_PIN_RESET);
+ 	  	 		 	  	    	  	 		 //HAL_Delay(2000);
+
+ 	  	 		 	  	    	 }
+// WIPER CONTROL :By default: 0(Wiper is OFF)
+//	              Rain Started: 1(Wiper Starts working)
+ 	  	 		 	 if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_5)==0)  //Check if button pressed
+ 	  	 		 		 		 {
+ 	  	 		 		 		 	 HAL_GPIO_WritePin(GPIOD, GPIO_PIN_10,GPIO_PIN_SET);
+ 	  	 		 		 		 	  	    	  	 		 // HAL_Delay(2000);
+
+ 	  	 		 		 		  }
+ 	  	 		     else
+ 	  	 		 		 		 {
+ 	  	 		 		 		 	 HAL_GPIO_WritePin(GPIOD,GPIO_PIN_10,GPIO_PIN_RESET);
+ 	  	 		 		 		 	  	    	  	 		 //HAL_Delay(2000);
+ 	  	 		 		 		 }
+
+
+
+//.........................................................................................................................................
